@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="600.0" style="-fx-background-color: #000000; -fx-border-radius: 20px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="_implementierung.PayController">
+   <children>
+      <HBox layoutX="116.0" layoutY="21.0" prefHeight="62.0" prefWidth="436.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="home" text="Home">
+               <HBox.margin>
+                  <Insets left="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="kuecheLabel" text="Küchenmaschinen">
+               <HBox.margin>
+                  <Insets left="20.0" right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="carlabel" text="Autogeräte">
+               <HBox.margin>
+                  <Insets right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="pflegelabel" text="Pflege">
+               <HBox.margin>
+                  <Insets right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="gadgetslabel" text="Gadgets">
+               <HBox.margin>
+                  <Insets right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="warenkorb" text="Warenkorb">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="login" text="Login">
+               <HBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="71.0" fitWidth="77.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Screenshot%202024-06-03%20195753.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="70.0" layoutY="98.0" prefHeight="288.0" prefWidth="482.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20px;">
+         <children>
+            <Label scaleX="2.5" scaleY="2.5" text="Bezahlen">
+               <VBox.margin>
+                  <Insets left="215.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="193.0" prefWidth="482.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="215.0">
+                     <children>
+                        <Label text="Card Number">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="10.0" top="20.0" />
+                           </VBox.margin></Label>
+                        <PasswordField fx:id="number" promptText="0000 0000 0000 0000" style="-fx-background-radius: 20px;" />
+                        <HBox prefHeight="22.0" prefWidth="246.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="156.0" text="Month and year">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></Label>
+                              <Label prefHeight="17.0" prefWidth="82.0" text="CVV code">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="32.0" prefWidth="246.0">
+                           <children>
+                              <TextField fx:id="month" prefHeight="25.0" prefWidth="29.0" promptText="00 " />
+                              <Line endX="100.0" startX="84.856689453125" startY="20.792892456054688" />
+                              <TextField fx:id="year" prefHeight="25.0" prefWidth="28.0" promptText="00" />
+                              <PasswordField fx:id="code" prefHeight="25.0" prefWidth="63.0">
+                                 <HBox.margin>
+                                    <Insets left="70.0" />
+                                 </HBox.margin>
+                              </PasswordField>
+                           </children>
+                        </HBox>
+                        <Label fx:id="fehlermeldung" textFill="RED">
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button fx:id="rent" mnemonicParsing="false" style="-fx-background-color: #1100FF; -fx-background-radius: 20px;" text="Leihen" textFill="WHITE">
+                           <padding>
+                              <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="215.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="58.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/Screenshot%202024-06-09%20102333.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="35.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/Screenshot%202024-06-09%20102345.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="60.0" top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children></VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
