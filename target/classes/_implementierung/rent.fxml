@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="600.0" style="-fx-background-color: #000000; -fx-border-radius: 20px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="_implementierung.RentController">
+   <children>
+      <HBox layoutX="116.0" layoutY="21.0" prefHeight="62.0" prefWidth="436.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="home" text="Home">
+               <HBox.margin>
+                  <Insets left="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="kuecheLabel" text="Küchenmaschinen">
+               <HBox.margin>
+                  <Insets left="20.0" right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="carlabel" text="Autogeräte">
+               <HBox.margin>
+                  <Insets right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="pflegelabel" text="Pflege">
+               <HBox.margin>
+                  <Insets right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="gadgetslabel" text="Gadgets">
+               <HBox.margin>
+                  <Insets right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="warenkorb" text="Warenkorb">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="login" text="Login">
+               <HBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="71.0" fitWidth="77.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Screenshot%202024-06-03%20195753.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="70.0" layoutY="98.0" prefHeight="288.0" prefWidth="482.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20px;">
+         <children>
+            <Label scaleX="1.75" scaleY="1.75" text="Danke!">
+               <VBox.margin>
+                  <Insets left="300.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="197.0" prefWidth="482.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Screenshot%202024-06-03%20195753.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Screenshot%202024-06-09%20114023.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="2.0" top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

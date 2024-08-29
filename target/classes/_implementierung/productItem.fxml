@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="40.0" prefWidth="384.0" style="-fx-border-color: #808080; -fx-border-radius: 20px; -fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="_implementierung.ProductItemController">
+    <children>
+        <ImageView fitHeight="30.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/Screenshot%202024-06-08%20112310.png" />
+            </image>
+            <HBox.margin>
+                <Insets left="20.0" top="2.5" />
+            </HBox.margin>
+        </ImageView>
+        <ComboBox fx:id="productDropdown">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" top="5.0" />
+            </HBox.margin>
+        </ComboBox>
+        <Label fx:id="productname" text="Productname">
+            <HBox.margin>
+                <Insets left="5.0" right="5.0" top="10.0" />
+            </HBox.margin>
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Label>
+        <Line endY="35.0">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Line>
+        <Label fx:id="price" text="Preis">
+            <HBox.margin>
+                <Insets left="12.0" right="12.0" top="10.0" />
+            </HBox.margin>
+         <font>
+            <Font size="10.0" />
+         </font>
+        </Label>
+        <Line endY="35.0" />
+        <ComboBox fx:id="wocheDropdown">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" top="5.0" />
+            </HBox.margin>
+        </ComboBox>
+      <Label fx:id="price1" text="wh">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <HBox.margin>
+            <Insets top="10.0" />
+         </HBox.margin>
+      </Label>
+        <Line endY="35.0" />
+        <ComboBox fx:id="anzahlDropdown">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" top="5.0" />
+            </HBox.margin>
+        </ComboBox>
+      <Label fx:id="price11" text="p.">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <HBox.margin>
+            <Insets top="10.0" />
+         </HBox.margin>
+      </Label>
+        <Line endY="35.0" />
+        <ImageView fx:id="delete" fitHeight="15.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/Screenshot%202024-06-08%20113014.png" />
+            </image>
+            <HBox.margin>
+                <Insets left="10.0" right="5.0" top="10.0" />
+            </HBox.margin>
+        </ImageView>
+    </children>
+</HBox>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="_implementierung.FifthControl">
+   <children>
+      <Line endX="625.7929077148438" endY="45.79290771484375" startY="400.0" stroke="DARKRED" />
+      <Line endX="550.5" endY="-36.20709228515625" layoutX="10.0" layoutY="10.0" startX="-19.0" startY="358.29290771484375" stroke="DARKRED" />
+      <Line endX="626.0" endY="252.0858154296875" layoutX="23.0" layoutY="130.0" startX="-29.0" startY="-33.70709228515625" stroke="DARKRED" />
+      <HBox layoutX="116.0" layoutY="21.0" prefHeight="62.0" prefWidth="436.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="home" text="Home">
+               <HBox.margin>
+                  <Insets left="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="kuecheLabel" text="Küchenmaschinen">
+               <HBox.margin>
+                  <Insets left="20.0" right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="carlabel" text="Autogeräte">
+               <HBox.margin>
+                  <Insets right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="pflegelabel" text="Pflege">
+               <HBox.margin>
+                  <Insets right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label text="Gadgets">
+               <HBox.margin>
+                  <Insets right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="warenkorb" text="Warenkorb">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="login" text="Login">
+               <HBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="71.0" fitWidth="77.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Screenshot%202024-06-03%20195753.png" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="product" hgap="5.0" layoutX="77.0" layoutY="121.0" prefHeight="265.0" prefWidth="446.0" vgap="10.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" percentWidth="50.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" percentWidth="50.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="50.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" percentHeight="50.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <HBox style="-fx-background-color: #ffffff; -fx-background-radius: 10px; -fx-border-color: #8b0000; -fx-border-radius: 10px;" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <children>
+                  <ImageView fitHeight="103.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Screenshot%202024-06-06%20072740.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" top="15.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #8b0000; -fx-border-radius: 10px;">
+                     <children>
+                        <Label text="Pro Kamera">
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="50 Fr. / Woche">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox style="-fx-background-color: #ffffff; -fx-background-radius: 10px; -fx-border-color: #8b0000; -fx-border-radius: 10px;" GridPane.columnIndex="1" GridPane.rowIndex="0">
+               <children>
+                  <ImageView fitHeight="49.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Screenshot%202024-06-08%20101850.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="4.0" right="11.0" top="40.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #8b0000; -fx-border-radius: 10px;">
+                     <children>
+                        <Label text="Drone">
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="100 Fr. / Woche">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox style="-fx-background-color: #ffffff; -fx-background-radius: 10px; -fx-border-color: #8b0000; -fx-border-radius: 10px;" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="107.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@img/Screenshot%202024-06-08%20102016.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #8b0000; -fx-border-radius: 10px;">
+                     <children>
+                        <Label text="Strom-Tester">
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="5 Fr. / Woche">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox style="-fx-background-color: #ffffff; -fx-background-radius: 10px; -fx-border-color: #8b0000; -fx-border-radius: 10px;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="69.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Screenshot%202024-06-08%20104558.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" top="30.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #8b0000; -fx-border-radius: 10px;">
+                     <children>
+                        <Label text="USB-C converter">
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="1 Fr. / Woche">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </GridPane>
+      <Label layoutX="252.0" layoutY="85.0" text="Gadgets" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
